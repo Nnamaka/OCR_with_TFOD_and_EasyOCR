@@ -5,23 +5,23 @@ TFOD and EasyOCR for a robust OCR engine
   <img width="600" heigt="300" src="https://github.com/Nnamaka/OCR_with_TFOD_and_EasyOCR/blob/main/annotating%20(1).gif">
 </span>
 
-
-#EasyOCR
+<hr>
+# EasyOCR
 <span align="left">
-  <img width="600" heigt="300" src="https://github.com/Nnamaka/OCR_with_TFOD_and_EasyOCR/blob/main/annotating%20(1).gif">
+  <img width="600" heigt="300" src="https://github.com/Nnamaka/OCR_with_TFOD_and_EasyOCR/blob/main/easyocr.png">
 </span>
 
- <a href="https://github.com/JaidedAI/EasyOCR">EasyOCR</a> is a deep learning model trained for OCR(optical character recognition). It's code base is based on the pytorch
-  framework. The model is able to recognize 83+ languages.
+ <a href="https://github.com/JaidedAI/EasyOCR">EasyOCR</a> is a deep learning model trained for OCR(optical character recognition). It's code base is based on the pytorch framework. The model is able to recognize 83+ languages.
   
   
-#Introduction
+# Introduction
 Optical character recognition is the conversion of images of typed, handwritten, or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene photo, or subtitle text superimposed on an image.
 The OCR application developed here combines TFOD and EasyOCR to create a robust OCR system.
  
-This README is a brief walkthrough of the major steps carried out to create this application.
+<i>This README is a brief walkthrough of the major steps carried out to create this application. Refer to <a href="https://github.com/Nnamaka/OCR_with_TFOD_and_EasyOCR/blob/main/TFOD_and_EasyOCR.ipynb">TFOD_and_EasyOCR.ipynb</a> for the full procedures</i>
+
 <hr>
-<i></i>
+
 I used the <a href="https://github.com/tzutalin/labelImg">labellimg</a> tool to label and annotate my images.
 My images are saved in the pascalVOC format and transformed to TFRecords to be fed into the TFOD pipeline.
 
@@ -36,7 +36,7 @@ if not os.path.exists(os.path.join(paths['APIMODEL_PATH'], 'research', 'object_d
 ##step 2 - Install EasyOCR and Import it to our enviroment
 <pre>
 !pip install easyocr
-<pre>
+</pre>
 <pre>
 import easyocr
 </pre>
