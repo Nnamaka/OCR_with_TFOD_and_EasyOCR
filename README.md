@@ -87,5 +87,5 @@ for idx, box in enumerate(boxes):
 * EasyOCR
 * labelImg
 
-# Twitter
-<a href="https://twitter.com/DNnamaka">Dike Nnamaka</a>
+### Twitter me at <a href="https://twitter.com/DNnamaka">Dike Nnamaka</a>
+
