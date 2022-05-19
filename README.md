@@ -5,12 +5,12 @@ TFOD and EasyOCR for a robust OCR engine
   <img width="600" heigt="300" src="https://github.com/Nnamaka/OCR_with_TFOD_and_EasyOCR/blob/main/annotating%20(1).gif">
 </span>
 
-<hr>
+
 # EasyOCR
 
-<span align="left">
+<p align="left">
   <img width="300" heigt="300" src="https://github.com/Nnamaka/OCR_with_TFOD_and_EasyOCR/blob/main/easyocr.png">
-</span>
+</p>
 
  <a href="https://github.com/JaidedAI/EasyOCR">EasyOCR</a> is a deep learning model trained for OCR(optical character recognition). It's code base is based on the pytorch framework. The model is able to recognize 83+ languages.
   
