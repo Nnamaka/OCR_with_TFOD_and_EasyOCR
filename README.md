@@ -12,7 +12,9 @@ TFOD and EasyOCR for a robust OCR engine
   <img width="300" heigt="300" src="https://github.com/Nnamaka/OCR_with_TFOD_and_EasyOCR/blob/main/easyocr.png">
 </p>
 
- <a href="https://github.com/JaidedAI/EasyOCR">EasyOCR</a> is a deep learning model trained for OCR(optical character recognition). It's code base is based on the pytorch framework. The model is able to recognize 83+ languages.
+
+
+<a href="https://github.com/JaidedAI/EasyOCR">EasyOCR</a> is a deep learning model trained for OCR(optical character recognition). It's code base is based on the pytorch framework. The model is able to recognize 83+ languages.
   
   
 # Introduction
@@ -28,13 +30,13 @@ My images are saved in the pascalVOC format and transformed to TFRecords to be f
 
 # Steps
 
-##step 1 - Download the TFOD repo and requirments
+## step 1 - Download the TFOD repo and requirments
 <pre>
 if not os.path.exists(os.path.join(paths['APIMODEL_PATH'], 'research', 'object_detection')):
     !git clone https://github.com/tensorflow/models {paths['APIMODEL_PATH']}
 </pre>
 
-##step 2 - Install EasyOCR and Import it to our enviroment
+## step 2 - Install EasyOCR and Import it to our enviroment
 <pre>
 !pip install easyocr
 </pre>
@@ -42,14 +44,14 @@ if not os.path.exists(os.path.join(paths['APIMODEL_PATH'], 'research', 'object_d
 import easyocr
 </pre>
 
-##Step 3 - Filter the detections from our TFOD model
+## Step 3 - Filter the detections from our TFOD model
 <pre>
 scores = list(filter(lambda x: x >thresh, detections['detection_scores']))
 boxes = detections['detection_boxes'][:len(scores)]
 classes = detections['detection_classes'][:len(scores)]
 </pre>
 
-##step 4 - Make inference on the OCR Model
+## step 4 - Make inference on the OCR Model
 Now we loop throug the detection(s) to get our final text recognition.
 
 <i>
@@ -60,6 +62,8 @@ This is done because the image document fed into the TFOD model was pre-processe
 <pre>
 height, width = image_np_with_detections.shape[0], image_np_with_detections.shape[1]
 </pre>
+
+
 
 <pre>
 for idx, box in enumerate(boxes):
