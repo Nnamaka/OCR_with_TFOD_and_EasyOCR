@@ -81,3 +81,11 @@ for idx, box in enumerate(boxes):
   ocr_result = reader.readtext(region)
   print(ocr_result)
 </pre>
+
+
+# Credits
+* EasyOCR
+* labelImg
+
+# Twitter
+<a href="https://twitter.com/DNnamaka">Dike Nnamaka</a>
