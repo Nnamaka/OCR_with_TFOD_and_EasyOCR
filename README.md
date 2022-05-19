@@ -7,8 +7,9 @@ TFOD and EasyOCR for a robust OCR engine
 
 <hr>
 # EasyOCR
+
 <span align="left">
-  <img width="600" heigt="300" src="https://github.com/Nnamaka/OCR_with_TFOD_and_EasyOCR/blob/main/easyocr.png">
+  <img width="300" heigt="300" src="https://github.com/Nnamaka/OCR_with_TFOD_and_EasyOCR/blob/main/easyocr.png">
 </span>
 
  <a href="https://github.com/JaidedAI/EasyOCR">EasyOCR</a> is a deep learning model trained for OCR(optical character recognition). It's code base is based on the pytorch framework. The model is able to recognize 83+ languages.
@@ -20,7 +21,7 @@ The OCR application developed here combines TFOD and EasyOCR to create a robust 
  
 <i>This README is a brief walkthrough of the major steps carried out to create this application. Refer to <a href="https://github.com/Nnamaka/OCR_with_TFOD_and_EasyOCR/blob/main/TFOD_and_EasyOCR.ipynb">TFOD_and_EasyOCR.ipynb</a> for the full procedures</i>
 
-<hr>
+
 
 I used the <a href="https://github.com/tzutalin/labelImg">labellimg</a> tool to label and annotate my images.
 My images are saved in the pascalVOC format and transformed to TFRecords to be fed into the TFOD pipeline.
