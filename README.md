@@ -35,6 +35,13 @@ My images are saved in the pascalVOC format and transformed to TFRecords to be f
 if not os.path.exists(os.path.join(paths['APIMODEL_PATH'], 'research', 'object_detection')):
     !git clone https://github.com/tensorflow/models {paths['APIMODEL_PATH']}
 </pre>
+After that we:
+* Install TFOD
+* Install Dependencies
+* Run Verification Script
+* Creat Label map and TFRecords
+* Train and Evaluate the model
+
 
 ## step 2 - Install EasyOCR and Import it to our enviroment
 <pre>
@@ -55,9 +62,11 @@ classes = detections['detection_classes'][:len(scores)]
 Now we loop throug the detection(s) to get our final text recognition.
 
 <i>
-<b>Note: We need to Renormalize the detection box</b>
-The coordinates of the bounding box from the output of the TFOD pipeline needs to be renormalized in other to correspond with the original image size.
+<b>Note: We need to Renormalize the detection box:</b>
+  
+<p>The coordinates of the bounding box from the output of the TFOD pipeline needs to be renormalized in other to correspond with the original image size.
 This is done because the image document fed into the TFOD model was pre-processed and transformed. This reduces the image size and now the final Output bounding box coordinates now reflects the size of the pre-processed image, which is not what we want.
+</p>
 </i>
 <pre>
 height, width = image_np_with_detections.shape[0], image_np_with_detections.shape[1]
